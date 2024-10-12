@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container mt-4"></main>
+    <h1>movie rentals</h1>
+
+    <form onsubmit="postmovie()">
+        <div class="mt-4">
+            <label for="input title" class="form-label">movie title</label>
+            <input type="text" id="inputtitle" class="form-control">
+        </div>
+        <label>genre</label>
+        <div class="mb-3">
+            <label for="input genre" class="form-label"></label>
+            <input type="text" input="inputgenre" class="form-control">
+        </div>
+        <label>release date</label>
+        <div class="mb-4">
+            <label for="inputreleasedate" class="form-label"></label>
+            <input type="number" input="inputreleasedate" class="form-control">
+        </div>
+        <label>available</label>
+        <div class="mb-5">
+            <label for="inputavailable" class="form-label"></label>
+            <input type="text" input="inputavailable" class="form-control">
+        </div>
+
+        <button class="btn btn-primary" type="submit">send data</button>
+        <button class="button" class="btn btn-success mt-4" onclick="showmodal()">edit</button>
+    </form>
+
+    <div class="table-responsive mt-4">
+        <table class="table table-bordered" id="reportmovies">
+
+        </table>
+    </div>
+</body>
+
+</html>
