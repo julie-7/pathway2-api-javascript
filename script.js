@@ -10,7 +10,7 @@ async function getmovies() {
             "Authorization": token,
             "Content-Type": `application/json`
         },
-        body: JSON.stringify(jsonData)
+        
     })
 
     let data = await response.json()
@@ -40,7 +40,7 @@ function rendermovies(data) {
 
 async function postmovie() {
     event.preventDefault()
- console.log("i have rented a movie")
+    console.log("i have rented a movie")
     let title = inputtitle.value
     let genre = inputgenre.value
     let releasedate = inputreleasedate.value
@@ -63,7 +63,8 @@ let response = await fetch(endpoint, {
         "Authorization": token,
         "Content-Type": `application/json`
     },
-    body: JSON.stringify(jsonData)
+
+
 })
 
 
@@ -71,8 +72,7 @@ if (response.status >= 200 && response.status <= 299) {
     console.log("object created")
     getmovies()
 } else {
-    console.log(objectwasnotcreated)
-    console.log(response.statusText)
+    
 }
 
 }
