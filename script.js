@@ -1,7 +1,7 @@
 const endpoint = "https://dfypyzoplyzfywjnitcn.supabase.co/rest/v1/movierental"
 const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmeXB5em9wbHl6Znl3am5pdGNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjgzNDczMTksImV4cCI6MjA0MzkyMzMxOX0.vANaYlT4x8hX9wjS_Yy2v4sOH-3OTJa577cAj_MAdXQ"
 
-let modal = bootstrap.Modal(document.getElementById(""))
+
 
 async function getmovies() {
 
